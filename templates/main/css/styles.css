@@ -106,16 +106,16 @@ border-radius: 7px !important;}
 .goonflch:hover{opacity:1;}
 
 
-.menubackg{width:1200px;height:60px;background:url('../images/menubg.jpg');margin:0 auto;}
-.menus_main{padding: 19px 31px;width: 25px;height: 21px;float:left;color:#999079;font-size:18px;font-family:OpenSans-Semibold;}
-.menus_main:hover{background: rgba(126, 121, 89, 0.2);color:#f3e6ba;}
+.menubackg{width:1200px;height:60px;margin:0 auto;}
+.menus_main{padding: 19px 31px;width: 25px;height: 21px;float:left;color:#000000;font-size:18px;font-family:OpenSans-Semibold;}
+.menus_main:hover{background: rgba(126, 121, 89, 0.2);color:#252523;}
 
-.menus_uslugi{padding: 19px 26px;width: 69px;height: 21px;float:left;color:#999079;font-size:18px;font-family:OpenSans-Semibold;}
-.menus_uslugi:hover{background: rgba(126, 121, 89, 0.2);color:#f3e6ba;}
-.menus_post{padding: 19px 30px;width: 160px;height: 21px;float:left;color:#999079;font-size:18px;font-family:OpenSans-Semibold;}
-.menus_post:hover{background: rgba(126, 121, 89, 0.2);color:#f3e6ba;}
-.menus_aboutUs{padding: 19px 27px;width: 50px;height: 21px;float:right;color:#999079;font-size:18px;font-family:OpenSans-Semibold;}
-.menus_aboutUs:hover{background: rgba(126, 121, 89, 0.2);color:#f3e6ba;}
+.menus_uslugi{padding: 19px 26px;width: 69px;height: 21px;float:left;color:#000000;font-size:18px;font-family:OpenSans-Semibold;}
+.menus_uslugi:hover{background: rgba(126, 121, 89, 0.2);color:#252523;}
+.menus_post{padding: 19px 30px;width: 160px;height: 21px;float:left;color:#000000;font-size:18px;font-family:OpenSans-Semibold;}
+.menus_post:hover{background: rgba(126, 121, 89, 0.2);color:#252523;}
+.menus_aboutUs{padding: 19px 27px;width: 50px;height: 21px;float:right;color:#000000;font-size:18px;font-family:OpenSans-Semibold;}
+.menus_aboutUs:hover{background: rgba(126, 121, 89, 0.2);color:#252523;}
 
 .textShot{float:right;margin:30px 0 0 0;}
 .menu1{float:right;margin:0 0 0 0;}
@@ -123,7 +123,7 @@ border-radius: 7px !important;}
 .nkpredlosbg{width:1200px;height:800px;margin:0 auto;}
 .menu2{width:301px;height:371px;background:url('../images/menu2.jpg');margin-left:73px;float:left;}
 .menu3{width:301px;height:371px;background:url('../images/menu3.jpg');margin-left:73px;float:left;}
-.menu4{width:301px;height:371px;background:url('../images/menu4.jpeg');margin-left:73px;float:left;}
+.menu4{width:301px;height:371px;background:url('../images/menu4.jpg');margin-left:73px;float:left;}
 
 .cool{width:1200px;height:295px;margin:0 auto;}
 
