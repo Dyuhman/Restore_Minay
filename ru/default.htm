@@ -41,7 +41,7 @@
 </div>
 <div class="cool">
     <table style="width:100%;">
-        <tr style="text-align:center;color:#fcc220;font-size:16px;font-family:OpenSans-Semibold;">
+        <tr style="text-align:center;color:#000000;font-size:16px;font-family:OpenSans-Semibold;">
             <td style="padding:5px;">БОЛЬШОЙ ВЫБОР</td>
             <td style="padding:5px;">БЕЗОПАСНОСТЬ</td>
             <td style="padding:5px;">ЭКОНОМИЯ</td>
@@ -53,7 +53,7 @@
             <td style="padding:5px;"><img src="../templates/main/images/piceconom.png"></td>
             <td style="padding:5px;"><img src="../templates/main/images/picfastcap.png"></td>
         </tr>
-        <tr style="text-align:center;color:#b9ae92;font-size:12px;font-family:Arial;">
+        <tr style="text-align:center;color:#000000;font-size:12px;font-family:Arial;">
             <td style="padding:5px;">Мы предоставляем большую часть ремонтных услуг.</br>
                 Любая сложность ремонта,</br>
                 мы сделаем все в лучшем виде!</td>
@@ -71,7 +71,7 @@
 </div>
 
 <!-- ФУТЕРНЫЕ БЛОКИ -->
-<div style="width:1214px;height:77px;margin:0 auto;background:url('../templates/main/images/loverru.png');">
+<div style="width:1202px;height:77px;margin:0 auto;background:url('../templates/main/images/loverru.png');">
 </div>
 <div class="innerfooter">
     <div class="innerfooterblk">
@@ -125,38 +125,10 @@
     NKboost.com is in no way associated with or endorsed by Blizzard Entertainment™. </br>
     NKboost.com is not selling wow ingame items, only offers you diffirent services to make your ingame skill better and gifting you ingame items. </br>
     NKboost.com 2014. All Rights Reserved. Coded by
-    <a href="../../https@vk.com/a.sanzharovsky" target="_blank">meylah15</a><center style="float: right;margin-top: -17px;margin-right: 20px;">
-        <!-- Yandex.Metrika informer -->
-        <a href="../../https@metrika.yandex.ru/stat/@id=25160303&from=informer"
-           target="_blank" rel="nofollow"><img src="../../bs.yandex.ru/informer/25160303/3_0_209FFFFF_007FFFFF_0_pageviews"
-                                               style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:25160303,lang:'ru'});return false}catch(e){}"/></a>
-        <!-- /Yandex.Metrika informer -->
+	<a href="../../https@vk.com/a.sanzharovsky" target="_blank">meylah15</a>
+	<center style="float: right;margin-top: -17px;margin-right: 20px;">
 
-        <!-- Yandex.Metrika counter -->
-        <script type="text/javascript">
-            (function (d, w, c) {
-                (w[c] = w[c] || []).push(function() {
-                    try {
-                        w.yaCounter25160303 = new Ya.Metrika({id:25160303,
-                            clickmap:true,
-                            trackLinks:true,
-                            accurateTrackBounce:true});
-                    } catch(e) { }
-                });
-
-                var n = d.getElementsByTagName("script")[0],
-                    s = d.createElement("script"),
-                    f = function () { n.parentNode.insertBefore(s, n); };
-                s.type = "text/javascript";
-                s.async = true;
-                s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-
-                if (w.opera == "[object Opera]") {
-                    d.addEventListener("DOMContentLoaded", f, false);
-                } else { f(); }
-            })(document, window, "yandex_metrika_callbacks");
-        </script>
-        <noscript><div><img src="../../mc.yandex.ru/watch/25160303" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+       
     </center>
     </center>
 </div>
@@ -295,212 +267,12 @@
 <script>
 
 
- setInterval( function updaterobokaska() { // обновление статуса корзины    
-            $.ajax({
-                url: 'functions/roboupdate.php',
-                success: function(html){
-                    $("#formaroboupdate").html(html);
-                }
-            })},2000);
+ 
 
 
 
-	function showoplata(id){
-		if (id=='pp'){
-			$('#oplpp').show();
-			$('#opsposbgsb').hide();
-			document.getElementById('valuta').value = 'pp';
 
-		}
-		if (id=='robo'){
-			$('#robo').show();
-			$('#opsposbgsb').hide();
-			document.getElementById('valuta').value = 'robo';
-		}
-		if (id=='skrill'){
-			$('#skrill').show();
-			$('#opsposbgsb').hide();
-			document.getElementById('valuta').value = 'skrill';
-		}
-	}
-	
-	
-	function oformlenit(){
-	var data   = $('#ofromleniy').serialize();
-        $.ajax({
-          type: 'POST',
-          url: 'functions/oformlenie.php',
-		   data: data,
-    success: function(data) {
-            $('#resultatoform').html(data);
-          },
-          error:  function(xhr, str){
-                alert('Возникла ошибка: ' + xhr.responseCode);
-            }
-        });	
-	}
-
-	
-	function oformclose(){
-		$('#oformlenie').hide();
-	}
-
-</script>
-<div class="vspluvbg" id="registration">
-	<div class="spluvregbg">
-		<center style="color:#fac021;font-family:OpenSans-Bold;font-size:18px;padding-top: 20px;">РЕГИСТРАЦИЯ</center>
-		<div style="float:right;">
-			<a href="javascript:void;" onclick="regclose();"><img class="KREST" src="../templates/main/images/krestclose.png"></a>
-		</div>
-		<form action="javascript:void();" method="post" name="registrform" id="registrform" onsubmit="getregister();">
-			<div style="width:475px;height:400px;margin:20px auto;">
-				<div style="width:236px;height:326px;float:left;text-align:center;color:#4f5561;font-family:OpenSans-Regular;font-size:14px;line-height: 30px;">
-					<center>
-						Имя<span style="color:red">*</span></br>
-						<input type="text" name="regname" class="reglenieinputs" required="required"></br>
-						Фамилия<span style="color:red">*</span></br>
-						<input type="text" name="regsoname" class="reglenieinputs" required="required"></br>
-						Email<span style="color:red">*</span></br>
-						<input type="email" name="regemail" class="reglenieinputs" required="required"></br>
-						Телефон<span style="color:red">*</span></br>
-						<input type="text" name="regtel" class="reglenieinputs" required="required"></br>
-						Страна проживания<span style="color:red">*</span></br>
-						<input type="text" name="regcountry" class="reglenieinputs" required="required"></br>
-					</center>
-				</div>
-				<div style="width:236px;height:326px;float:left;text-align:center;color:#4f5561;font-family:OpenSans-Regular;font-size:14px;line-height: 30px;">
-					<center>
-						Логин<span style="color:red">*</span></br>
-						<input type="text" name="reglogin" class="reglenieinputs" required="required"></br>
-						Пароль<span style="color:red">*</span></br>
-						<input type="password" name="regpass1" class="reglenieinputs" required="required"></br>
-						Повторите пароль<span style="color:red">*</span></br>
-						<input type="password" name="regpass2" class="reglenieinputs" required="required"></br>
-						Skype<span style="color:red">*</span></br>
-						<input type="text" name="regskype" class="reglenieinputs" required="required"></br>
-						Реферальный код</br>
-						<input type="text" name="regrefer" class="reglenieinputs"></br>
-					</center>
-				</div>
-				<center>
-					<input type="submit" value="" class="regfrominsmnt">
-				</center>
-			</div>
-			<div id="resultatischenf" style="width: 500px;text-align: center;margin-top:-20px;">
-			</div>
-		</form>
-	</div>
-</div>
-
-
-
-<script>
-function getregister(){
-	var data   = $('#registrform').serialize();
-        $.ajax({
-          type: 'POST',
-          url: 'functions/registration.php',
-		   data: data,
-			success: function(data) {
-            $('#resultatischenf').html(data);
-          },
-          error:  function(xhr, str){
-                alert('Возникла ошибка: ' + xhr.responseCode);
-            }
-        });	
-	}
-
-	function regclose(){
-		$('#registration').hide();
-	}
-</script><div class="vspluvbg" id="authoris">
-	<div class="spluvauthbg">
-		<center id="whatyouydo" style="color:#fac021;font-family:OpenSans-Bold;font-size:18px;padding-top: 20px;">АВТОРИЗАЦИЯ</center>
-		<div style="float:right;">
-			<a href="javascript:void;" onclick="authclose();"><img class="KREST" src="../templates/main/images/krestclose.png"></a>
-		</div>
-		<div id="autherblocker" style="width:300px;height:280px;margin:0 auto;text-align:center;color:#4f5561;font-family:OpenSans-Regular;font-size:14px;line-height: 30px;">
-			<form action="javascript:void()" method="post" name="authforma" id="authforma" onsubmit="getauther()"></br>
-						Логин<span style="color:red">*</span></br>
-						<input type="text" name="authlogin" class="reglenieinputs" required></br>
-						Пароль<span style="color:red">*</span></br>
-						<input type="password" name="authpass" class="reglenieinputs" required></br>
-						<input type="submit" value="" class="authsubmiter">
-			</form>
-			<div id="resultauthera" style="margin-top:-10px;">
-			</div>
-		</div>
-		<div id="repeaterpasser" style="width:300px;height:280px;margin:0 auto;text-align:center;color:#4f5561;font-family:OpenSans-Regular;font-size:14px;line-height: 30px;display:none">
-			<form action="javascript:void()" method="post" name="authformarep" id="authformarep" onsubmit="getlostpass()"></br>
-						Email<span style="color:red">*</span></br>
-						<input type="text" name="repemail" class="reglenieinputs" required></br>
-						Логин<span style="color:red">*</span></br>
-						<input type="text" name="replogin" class="reglenieinputs" required></br>
-						<input type="submit" value="" class="authsubmiter" id="repeattubmiter">
-			</form>
-			<div id="resultrepeatpass" style="margin-top:-10px;">
-			</div>
-		</div>
-		<div style="float:left;margin: -15px 0 0 40px;">
-		<a class="korzervert" href="javascript:void();" onclick="regshow();">Регистрация</a>
-		</div>
-		<div style="float:right;margin: -15px 32px 0 0;">
-		<a class="korzervert" href="javascript:void();" id="lostpaserbtnauth" onclick="showvostpasa();">Забыли пароль?</a>
-		<a class="korzervert" href="javascript:void();" id="authbackbtnauth" style="display:none" onclick="showvosauthagain();">Авторизация</a>
-		</div>
-	</div>
-</div>
-
-
-
-<script>
-
-	function showvostpasa(){
-		$('#repeaterpasser').show();
-		$('#authbackbtnauth').show();
-		$('#lostpaserbtnauth').hide();
-		$('#autherblocker').hide();
-		$('#whatyouydo').html('ВОССТАНОВЛЕНИЕ');
-	}
-	function showvosauthagain(){
-		$('#repeaterpasser').hide();
-		$('#authbackbtnauth').hide();
-		$('#lostpaserbtnauth').show();
-		$('#autherblocker').show();
-		$('#whatyouydo').html('АВТОРИЗАЦИЯ');
-	}
-function getauther(){
-	var data   = $('#authforma').serialize();
-        $.ajax({
-          type: 'POST',
-          url: 'functions/auth.php',
-		   data: data,
-			success: function(data) {
-            $('#resultauthera').html(data);
-          },
-          error:  function(xhr, str){
-                alert('Возникла ошибка: ' + xhr.responseCode);
-            }
-        });	
-	}
-function getlostpass(){
-	var data   = $('#authformarep').serialize();
-        $.ajax({
-          type: 'POST',
-          url: 'functions/repeatpass.php',
-		   data: data,
-			success: function(data) {
-            $('#resultrepeatpass').html(data);
-          },
-          error:  function(xhr, str){
-                alert('Возникла ошибка: ' + xhr.responseCode);
-            }
-        });	
-	}
-	function authclose(){
-		$('#authoris').hide();
-	}
-</script><div class="vspluvbg" id="podrobnvspl">
+<div class="vspluvbg" id="podrobnvspl">
 </div>
 </body>
 </html>
